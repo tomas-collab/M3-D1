@@ -203,14 +203,26 @@ if ((a < 0 && b > 0) || a > 0 && b < 0) {
 // Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
 
 function creatNewString(a){
-   a.slice(0,3)
+  if (a.length === 3){
+      return a.toUpperCase()
+  }
+
+  firstThree = a.substring(0,3).ToLowerCase
+  remaining = a.substring(3,a.length).toUpperCase
 }
 
 
 // 17)
 
 // Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
-
+ 
+function sumRange(a,b){
+if (a+b>50 && a+b<80){
+    return 65
+}else{
+    return 80
+}
+}
 // 18)
 
 // Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
