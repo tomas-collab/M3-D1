@@ -239,6 +239,19 @@ if (a+b>50 && a+b<80){
 // 34 has four factors: 1, 2, 17, and 34.
 // this would be "34".
 
+function converNumToString(a){
+    if(a%3 === 0){
+        return " Diego"
+    }else if(a%5===0){
+     return 'Riccardo'
+    }else if(a%7===0){
+        return 'stefano'
+    }else{
+        return a
+    }
+}
+console.log(converNumToString(30))
+
 // 19)
 // Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
 
